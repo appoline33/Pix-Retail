@@ -1,0 +1,238 @@
+/*
+Theme Name: storefront-child 
+Description: thème enfant de pix retail
+Author: Appoline 
+Author URI: https://pixretail.fr
+Template: storefront
+Version: 1.0.0
+*/
+
+
+/* Polices corps de texte */
+
+
+/* Footer */
+.site-footer a:not(.button){
+    display: none;
+}
+.site-footer{
+    background-color: #393e4621;
+}
+.site-info{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#text{
+    display: none;
+    color: transparent;
+}
+
+/* Supprimer le breadcrumbs */
+.woocommerce-breadcrumb{
+    display:none;
+}
+
+/* Supprimer la barre de recherches */
+.site-search{
+    display: none;
+}
+.storefront-handheld-footer-bar{
+    display: none;
+}
+
+/* Center le logo */
+.woocommerce-active .site-header .site-branding{
+    display: flex;
+    justify-content: center;
+}
+.woocommerce-active .site-header .site-branding{
+    width: 100%;
+}
+
+/* Modification des titres */
+    /* Titre Boutique */
+.storefront-full-width-content.woocommerce-cart .entry-header h1:last-child, .storefront-full-width-content.woocommerce-checkout .entry-header h1:last-child, .storefront-full-width-content.woocommerce-account .entry-header h1:last-child, .storefront-full-width-content .woocommerce-products-header h1:last-child{
+    color: #29a19c;
+    font-weight: bold;
+    font-size: 5em;
+}
+    /* Titre Contact */
+.entry-header{
+    display: flex;
+    justify-content: center;
+}
+h1, h4, .wc-block-grid__product-title{
+    color: #29a19c;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+/* Modification des boutons */
+    /* Boutons */
+    ul.products li.product .button, ul.products .wc-block-grid__product .button, .wc-block-grid__products li.product .button, .wc-block-grid__products .wc-block-grid__product .button{
+     border-radius: 5px;
+    }
+    /* Bouton d'achat */
+    button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt{
+        background-color: #29a19c;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    /* Bouton commentaire */
+    button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button{
+        border-radius: 5px;
+    }
+
+
+/* Bandeau Wocommerce */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments{
+    background-color: #393e46;
+    border: none;
+    border-radius: 5px;
+}
+
+/* "Modifier" */
+.edit-link{
+    display: none;
+}
+.post-edit-link{
+    color: transparent;
+}
+
+/* Page d'accueil */
+    /* "Découvrez notre sélection */
+    .elementor-19 .elementor-element.elementor-element-568113a{
+        font-size: 2em;
+    }
+    /* Titres catégories */
+    .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title{
+        font-size: 2em;
+    }
+    /* Text décoration */
+    .hentry .entry-content a:not(.button){
+        text-decoration: none;
+        font-weight: 500;
+    }
+    /* Border-radius images */
+    .elementor-19 .elementor-element.elementor-element-4ac45c6 .elementor-image-box-img img{
+        border-radius: 3px;
+    }
+    .elementor-19 .elementor-element.elementor-element-0e42525 .elementor-image-box-img img{
+        border-radius: 3px;
+    }
+    .elementor-19 .elementor-element.elementor-element-ab1e27d .elementor-image-box-img img{
+        border-radius: 3px;
+    }
+
+
+/* Formulaire de contact */
+    /* Centrer le formulaire */
+    form{
+        display: flex;
+        flex-direction: column;
+     align-items: center;
+    }
+    /* Esthétique des inputs */
+    input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='url'], input[type='password'], input[type='search'], textarea, .input-text {
+        width: 20em;
+    }
+    textarea{
+        width: 20em;
+    }
+    input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='url'], input[type='password'], input[type='search'], textarea, .input-text{
+        background-color: transparent;
+        color: #29a19c;
+        border: solid 2px;
+        border-radius: 5px;
+    }
+    label{
+        color: #393e46;
+        font-weight: 500;
+    }
+
+
+/* Page contact */
+    /* Informations de bas de page */
+    .hentry .entry-content a:not(.button){
+        color: #7a7a7a;
+        font-weight: 400;
+    }
+    /* Mise en forme de la map de contact */
+    h3, .wc-block-grid__product-title{
+        font-size: 3em;
+    }
+    .elementor-widget-heading.elementor-widget-heading .elementor-heading-title{
+        color: #393e46;
+    }
+    b, strong{
+        color: #29a19c;
+    }
+
+
+/* Icones réseaux sociaux */
+#sfsi_plus_floater{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 5% !important;
+    right: 0 !important;
+}
+
+
+/* Page boutique */
+    /* Tri des articles */
+    .storefront-sorting select{
+        background-color: transparent;
+        border: solid 0.5px;
+        border-color: #29a19c;
+    }
+    /* Couleur du texte */
+    .woocommerce-result-count{
+        color: #29a19c;
+    }
+
+
+/* Fiche produit */
+.single-product div.product table.variations select{
+    background-color: transparent;
+    border: solid 0.5px;
+    border-color: #29a19c;
+}
+label{
+    color: #393e46;
+}
+    /* Navigation latérale */
+    .storefront-product-pagination{
+        display: none;
+    }
+
+
+/* Confirmation de commande */
+    /* Texte input */
+    .site-content, .header-widget-region{
+        color: #7a7a7a; 
+    }
+    /* Texte */
+    #ship-to-different-address label{
+        text-align: center;
+        color: #393e46;
+        font-weight: 600;
+    }
+    #order_review_heading{
+        color: #393e46;
+        font-weight: 600;
+    }
+
+
+/* Commande reçue */
+    /* H2 */
+    h2 .wc-block-grid__product-title{
+        text-align: center;
+        color: #393e46;
+        font-weight: 600;
+        font-size: 3em;
+    }
+
+
